@@ -1,0 +1,172 @@
+.mp-auth {
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.mp-auth h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.mp-auth-sub {
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.mp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.mp-field label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.mp-field input,
+.mp-field select {
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding: 11px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--paper-raised);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.mp-field input:focus,
+.mp-field select:focus {
+  border-color: var(--match-accent);
+}
+
+.mp-submit {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--match-accent);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 8px;
+  transition: opacity 0.15s ease;
+}
+
+.mp-submit:hover {
+  opacity: 0.9;
+}
+
+.mp-submit:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.mp-error {
+  background: var(--match-tint);
+  color: var(--match-deep);
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 18px;
+}
+
+.mp-switch {
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 24px;
+}
+
+.mp-switch button {
+  background: none;
+  border: none;
+  color: var(--match-accent);
+  font-weight: 500;
+  font-size: 13px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+/* Role selection */
+.mp-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mp-role-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  background: var(--paper-raised);
+  text-align: left;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.mp-role-card:hover {
+  border-color: var(--match-accent);
+  background: var(--match-tint);
+}
+
+.mp-role-glyph {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--match-tint);
+  color: var(--match-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.mp-role-text strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.mp-role-text span {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+/* Simple top bar inside module */
+.mp-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.mp-topbar-user {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.mp-logout {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.mp-logout:hover {
+  border-color: var(--line-strong);
+  color: var(--ink);
+}

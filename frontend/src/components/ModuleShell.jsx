@@ -57,9 +57,16 @@ export default function ModuleShell({ module, children }) {
             <button type="button" className="mshell-icon-btn" aria-label="Notifications" title="Notifications">
               <BellIcon />
             </button>
-            <button type="button" className="mshell-icon-btn" aria-label="Paramètres" title="Paramètres">
+            <button
+              type="button"
+              className="mshell-icon-btn"
+              aria-label="Paramètres"
+              title="Paramètres"
+              onClick={() => navigate('/matchpro/profile')}
+            >
               <GearIcon />
             </button>
+
             <button type="button" className="mshell-icon-btn" aria-label="Déconnexion" title="Déconnexion" onClick={handleLogout}>
               <LogoutIcon />
             </button>
